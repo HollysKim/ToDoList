@@ -1,13 +1,100 @@
 body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.parent-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(224, 223, 223);
+  padding: 20px;
+}
+
+.right-container {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.task:hover {
+  color: rgb(26, 70, 153);
+}
+
+.project:hover {
+  color: rgb(26, 70, 153);
+}
+
+.task-subcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+
+.createBtn {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background-color: transparent
+}
+
+.createBtn:hover {
+  background-color: rgb(211, 209, 209);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 10px;
+  border: 3px solid rgb(194, 194, 194);
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: rgb(224, 223, 223);
+}
+
+.formBtn {
+  background-color: rgb(224, 223, 223);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.formBtn:hover {
+  opacity: 70%;
+}
+
+input[type=text] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
 }
