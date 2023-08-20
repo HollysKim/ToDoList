@@ -21,8 +21,12 @@
     }
 
     const handleProjectList = (list) => {
-      setProjectList(projectList.concat(list))
-      
+      if(list == 'clear') {
+        setProjectList([])
+      }
+      else {
+        setProjectList(projectList.concat(list))
+      }
     }
 
     useEffect(()=> {

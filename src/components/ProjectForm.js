@@ -10,12 +10,21 @@ const ProjectForm = ({setProjectList}) => {
             name: event.target.name.value,
             tasks: []
         }
-        setProjectList(project)
+        if(project.name.length > 0) {
+            setProjectList(project)
+        }
+        else {
+            alert('Please enter a project title.')
+        }
         setCreateBtn(false)
     }
 
+    const deleteProjects = () => {
+        setProjectList('clear')
+    }
+
     return(
-        <div>
+        <div className="left-menu">
             <button className="createBtn" onClick={()=>setCreateBtn(true)}>Create new project</button>
             {createBtn
             ? <form className="form" onSubmit={submitProjectForm}>
@@ -26,7 +35,7 @@ const ProjectForm = ({setProjectList}) => {
             </form>
             : null
             }
-
+            <button className="deleteBtn" onClick={()=>deleteProjects()}>Delete all projects</button>
         </div>
     )
 }

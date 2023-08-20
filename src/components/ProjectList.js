@@ -14,7 +14,6 @@ const ProjectList = ({setProjectClicked, projectList, setProjectSelected}) => {
                 </div>
                 )
             }
-            
         </div>
     )
 }

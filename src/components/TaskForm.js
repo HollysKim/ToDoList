@@ -23,7 +23,7 @@ const TaskForm = ({setTaskList}) => {
 
     return(
         <div>
-            <button className="createBtn" onClick={()=>setCreateBtn(true)}>Create new task</button>
+            <button className="formBtn" onClick={()=>setCreateBtn(true)}>Create new task</button>
             {createBtn
             ? <form onSubmit={submitTaskForm} className="form">
                 <label>Task name</label>

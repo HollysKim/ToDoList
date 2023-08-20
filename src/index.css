@@ -24,7 +24,11 @@ body {
   padding: 20px;
 }
 
-
+.left-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
 
 .project-container {
   display: flex;
@@ -65,8 +69,21 @@ body {
   background-color: transparent
 }
 
+.deleteBtn {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background-color: red;
+  color: white;
+}
+
 .createBtn:hover {
   background-color: rgb(211, 209, 209);
+}
+
+.deleteBtn:hover {
+  background-color: rgb(219, 0, 0);
 }
 
 .form {
@@ -86,7 +103,7 @@ body {
   padding: 5px;
   border-radius: 4px;
   font-size: 18px;
-  width: 100%;
+  width: 20vh;
 }
 
 .formBtn:hover {
@@ -97,4 +114,9 @@ input[type=text] {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
+}
+
+img {
+  width: 5vh;
+  align-self: center;
 }
